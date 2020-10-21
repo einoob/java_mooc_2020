@@ -1,10 +1,12 @@
+# "Verkkokauppa"
+Teemme tehtävässä muutamia verkkokaupan hallinnointiin soveltuvia ohjelmakomponentteja.
 
 ## Osa 1: Varasto
 
 Tee luokka Varasto jolla on seuraavat metodit:
 
 <li>public void lisaaTuote(String tuote, int hinta, int saldo) lisää varastoon tuotteen jonka hinta ja varastosaldo ovat parametrina annetut luvut</li>
-<li>public int hinta(String tuote) palauttaa parametrina olevan tuotteen hinnan, jos tuotetta ei ole varastossa, palauttaa metodi arvon -99.</li>
+<li>public int hinta(String tuote) palauttaa parametrina olevan tuotteen hinnan, jos tuotetta ei ole varastossa, palauttaa metodi arvon -99.</li><br>
 Varaston sisällä tuotteiden hinnat (ja seuraavassa kohdassa saldot) tulee tallettaa Map<String, Integer>-tyyppiseksi määriteltyyn muuttujaan! Luotava olio voi olla tyypiltään HashMap, muuttujan tyyppinä on käytettävä Map-rajapintaa.
 
 
@@ -20,7 +22,7 @@ Aseta tuotteiden varastosaldot samaan tapaan Map<String, Integer>-tyyppiseen muu
 
 Listätään varastolle vielä yksi metodi:
 
-<li>public Set<String> tuotteet() palauttaa joukkona varastossa olevien tuotteiden nimet.</li>
+<li>public Set<String> tuotteet() palauttaa joukkona varastossa olevien tuotteiden nimet.</li><br>
 Metodi on helppo toteuttaa HashMapin avulla. Saat tietoon varastossa olevat tuotteet kysymällä ne joko hinnat tai saldot muistavalta Map:iltä metodin keySet avulla.
   
 ## Osa 4: Ostos
